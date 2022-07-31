@@ -2,11 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Math Helpers</title>
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <h4>Choose a Function</h4>
+        <select onchange="updateInputs()" id="select-function">
+            <option value="pi">Pi (7 digit accuracy)</option>
+            <option value="areaSquare">Area of a Square</option>
+            <option value="areaCircle">Area of a Circle</option>
+            <option value="areaRectangle">Area of a Rectangle</option>
+            <option value="areaTriangle">Area of a Triangle</option>
+            <option value="perimeterSquare">Perimeter of a Square</option>
+            <option value="perimeterRectangle">Perimeter of a Rectangle</option>
+            <option value="perimeterTriangle">Perimeter of a Triangle</option>
+            <option value="circumferenceCircle">Circumference of a Circle</option>
+            <option value="volumeCube">Volume of a Cube</option>
+            <option value="volumeRectangularPrism">Volume of a Rectangular Prism</option>
+            <option value="volumeCylinder">Volume of a Cylinder</option>
+            <option value="volumeSphere">Volume of a Sphere</option>    
+        </select>
+        <div id="inputs"></div>
+        <div id="outputs"></div>
         <script src="script.js"></script>
     </body>
 </html>
